@@ -1,8 +1,4 @@
-require 'simplecov'
-SimpleCov.start do
-  SimpleCov.refuse_coverage_drop
-  SimpleCov.minimum_coverage 100
-end
+
 ENV['GEM_ENV'] = 'test'
 require 'rspec/core'
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
